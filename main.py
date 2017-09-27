@@ -23,7 +23,7 @@ def tweetAnalyser(search_topic):
 	public_tweets = tweet_handler.getTweets()
 
 	tweet_dict = {}
-
+	i = 0
 	for t in public_tweets:
 		temp_tweet = Unwanted72(t.text)
 		tweet_blob = TextBlob(temp_tweet)
@@ -41,7 +41,7 @@ def tweetAnalyser(search_topic):
 		temp_dict['polarity'] = tweet_sentiment.polarity
 		temp_dict['subjectivity'] = tweet_sentiment.subjectivity
 
-		tweet_dict.append(str(temp_dict))
+		tweet_dict.update(str("tweet"+i),temp_dict)
 
 	return json.dumps(tweet_dict)
 
