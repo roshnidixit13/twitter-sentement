@@ -13,6 +13,9 @@ def Unwanted72(tweet):
 	tweet = re.sub(r"http\S+", "", tweet)
 	return " "+tweet
 
+@app.route('/')
+def Home():
+	return "Forbidden Bro - 403"
 
 @app.route('/<string:search_topic>')
 def tweetAnalyser(search_topic):
@@ -43,7 +46,7 @@ def tweetAnalyser(search_topic):
 	return json.dumps(tweet_dict)
 
 if __name__ == "__main__":
-	app.run(debug = True)
+	app.run(debug = False)
 	dump()
 
 
