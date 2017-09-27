@@ -22,7 +22,7 @@ def tweetAnalyser(search_topic):
 	tweet_handler = Tweet(search_topic)
 	public_tweets = tweet_handler.getTweets()
 
-	tweet_dict = []
+	tweet_dict = {}
 
 	for t in public_tweets:
 		temp_tweet = Unwanted72(t.text)
