@@ -41,7 +41,7 @@ def tweetAnalyser(search_topic):
 		temp_dict['polarity'] = tweet_sentiment.polarity
 		temp_dict['subjectivity'] = tweet_sentiment.subjectivity
 
-		tweet_dict.update(str("tweet"+i),temp_dict)
+		tweet_dict.update("tweet"+str(i),temp_dict)
 
 	return json.dumps(tweet_dict)
 
