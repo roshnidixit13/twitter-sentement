@@ -47,7 +47,7 @@ def tweetAnalyser(search_topic):
 	return json.dumps(tweet_dict)
 
 if __name__ == "__main__":
-	app.run(debug = False)
+	app.run(debug = False,threaded=True)
 	dump()
 
 
