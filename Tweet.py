@@ -9,10 +9,10 @@ class Tweet:
 		self.topic = topic
 
 	def getTweets(self):
-		c_key = 'mXwXLfzipnRTgq1WpZdzfIKvl'
-		c_secret = '3onhLpaY6YPfLq53Pns0Bb7fj6WXiSNKYceSfaOiTGylUFpiTL'
-		a_token = '2972156527-zl2XpdY9UEzjUmZmXgrjVJNmkfgv8Ky3f4SpRRE'
-		a_secret = 'OEZohRHaw70KjL5XdNwrstnrLzoEYkrF2UGYN2Gde8DxP'
+		c_key = ''
+		c_secret = ''
+		a_token = ''
+		a_secret = ''
 
 		auth = tweepy.OAuthHandler(c_key,c_secret)
 		auth.set_access_token(a_token,a_secret)
